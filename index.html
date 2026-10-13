@@ -1,1 +1,77 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DINEX STORE</title>
+<style>
+body{margin:0;background:#0b0b12;color:white;font-family:Arial}
+header{text-align:center;padding:24px;background:#191923}
+header h1{color:#ff3030}
+nav{text-align:center;background:#242432;padding:14px}
+nav a{color:white;margin:8px;text-decoration:none}
+h2{text-align:center;color:#ff3838}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;padding:14px}
+.card{background:#20202d;padding:15px 8px;text-align:center;border-radius:12px}
+.pic{font-size:38px}
+button{background:#ff3030;color:white;border:0;padding:10px;border-radius:7px}
+footer{text-align:center;padding:25px;color:#bbb}
+</style>
+</head>
+<body>
+<header>
+<h1>🎮 DINEX STORE</h1>
+<p>Your Ultimate Gaming Store</p>
+</header>
+<nav>
+<a href="#products">Products</a>
+<a href="#topup">Top-up</a>
+</nav>
+<h2 id="products">🔥 Gaming Products</h2>
+<div class="grid">
+<div class="card">
+<div class="pic">💎</div>
+<h3>Free Fire Diamonds</h3>
+<p>Diamond Top-up</p>
+<button onclick="order('Free Fire Diamonds')">Order Now</button>
+</div>
+<div class="card">
+<div class="pic">🪙</div>
+<h3>PUBG UC</h3>
+<p>UC Top-up</p>
+<button onclick="order('PUBG UC')">Order Now</button>
+</div>
+<div class="card">
+<div class="pic">🎮</div>
+<h3>Gaming Panels</h3>
+<p>Panel products</p>
+<button onclick="order('Gaming Panels')">Order Now</button>
+</div>
+<div class="card">
+<div class="pic">🔑</div>
+<h3>Gaming Keys</h3>
+<p>Digital keys</p>
+<button onclick="order('Gaming Keys')">Order Now</button>
+</div>
+<div class="card" id="topup">
+<div class="pic">⚡</div>
+<h3>TU Top-up</h3>
+<p>Top-up service</p>
+<button onclick="order('TU Top-up')">Order Now</button>
+</div>
+<div class="card">
+<div class="pic">🎧</div>
+<h3>Gaming Accessories</h3>
+<p>Gaming gear</p>
+<button onclick="order('Gaming Accessories')">Order Now</button>
+</div>
+</div>
+<footer>© 2026 DINEX STORE</footer>
+<script>
+function order(product){
+alert("You selected: "+product+
+"\nPlease contact the store owner to complete your order.");
+}
+</script>
+</body>
+</html>
